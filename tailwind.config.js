@@ -14,7 +14,7 @@ export default {
         ring: 'hsl(219, 18%, 81%)',
       },
       fontFamily: {
-        sans: ['Nunito', 'sans-serif'],
+        sans: ['Rubik', 'sans-serif'],
       },
     },
     plugins: [],
