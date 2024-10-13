@@ -4,6 +4,8 @@ import './App.css'
 
 const Header = lazy(() => import('./components/Header/Header'));
 const Hero = lazy(() => import('./components/Hero/Hero'));
+const Skills = lazy(() => import('./components/Skills/Skills'))
+const Spacing = lazy(() => import('./components/Spacing/Spacing'))
 
 const App = () => {
   return (
@@ -11,7 +13,10 @@ const App = () => {
       <main>
         <Suspense fallback={<div>Chargement...</div>}>
           <Header />
+          <Spacing size='lg' />
           <Hero />
+          <Spacing size='md' />
+          <Skills />
         </Suspense>
       </main>
     </BrowserRouter>
