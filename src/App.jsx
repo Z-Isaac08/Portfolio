@@ -6,6 +6,9 @@ const Header = lazy(() => import('./components/Header/Header'));
 const Hero = lazy(() => import('./components/Hero/Hero'));
 const Skills = lazy(() => import('./components/Skills/Skills'))
 const Spacing = lazy(() => import('./components/Spacing/Spacing'))
+const Projects = lazy(() => import('./components/Projects/Projects'))
+const Contacts = lazy(() => import('./components/Contact/Conctact'))
+const Footer = lazy(() => import('./components/Footer/Footer'))
 
 const App = () => {
   return (
@@ -17,6 +20,12 @@ const App = () => {
           <Hero />
           <Spacing size='md' />
           <Skills />
+          <Spacing size='md' />
+          <Projects />
+          <Spacing size='md' />
+          <Contacts />
+          <Spacing size='sm' />
+          <Footer />
         </Suspense>
       </main>
     </BrowserRouter>
