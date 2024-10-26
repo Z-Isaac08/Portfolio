@@ -21,7 +21,7 @@ const Hero = () => {
                     <img src={Logo} alt="Image d'Isaac" className="h-60 w-60 object-cover rounded-full" />
                 </div>
                 <button type='button' className='flex items-center gap-2 bg-darkerBackground text-foreground rounded-sm p-3'>
-                    <FontAwesomeIcon icon={faDownload} />
+                    <FontAwesomeIcon icon={faDownload} className='bg-none' />
                     Mon CV
                 </button>
             </div>

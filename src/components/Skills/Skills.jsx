@@ -7,6 +7,7 @@ import NodeJSLogo from '../../assets/nodejs.svg';
 import FirebaseLogo from '../../assets/firebase.svg';
 import FlutterLogo from '../../assets/flutter.svg';
 import MongoLogo from '../../assets/mongodb.svg';
+import SQLogo from '../../assets/sqlite.svg';
 
 const Skills = () => {
     const [activeTab, setActiveTab] = useState("web");
@@ -20,6 +21,7 @@ const Skills = () => {
         { logo: FlutterLogo, name: "Flutter", tag: "mobile" },
         { logo: FirebaseLogo, name: "Firebase", tag: "mobile" },
         { logo: MongoLogo, name: "MongoDB", tag: "web" },
+        { logo: SQLogo, name: "SQLite", tag: "mobile" },
     ];
 
     // Filtrer les technologies en fonction de l'onglet actif
