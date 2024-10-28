@@ -8,6 +8,7 @@ import FirebaseLogo from '../../assets/firebase.svg';
 import FlutterLogo from '../../assets/flutter.svg';
 import MongoLogo from '../../assets/mongodb.svg';
 import SQLogo from '../../assets/sqlite.svg';
+import FigmaLogo from '../../assets/figma.svg'
 
 const Skills = () => {
     const [activeTab, setActiveTab] = useState("web");
@@ -22,6 +23,7 @@ const Skills = () => {
         { logo: FirebaseLogo, name: "Firebase", tag: "mobile" },
         { logo: MongoLogo, name: "MongoDB", tag: "web" },
         { logo: SQLogo, name: "SQLite", tag: "mobile" },
+        { logo: FigmaLogo, name: "Figma", tag: "design" },
     ];
 
     // Filtrer les technologies en fonction de l'onglet actif
@@ -44,6 +46,12 @@ const Skills = () => {
                     onClick={() => setActiveTab("mobile")}
                 >
                     Mobile
+                </button>
+                <button
+                    className={`px-4 py-2 ${activeTab === "design" ? "text-foreground text-2xl font-semibold" : ""}`}
+                    onClick={() => setActiveTab("design")}
+                >
+                    UX/UI Design
                 </button>
             </div>
             <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">

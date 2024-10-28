@@ -41,6 +41,24 @@ const Projects = () => {
             link: 'https://macfinder.onrender.com/',
             tag: 'web',
         },
+        {
+            name: 'Orus Bank',
+            desc: 'Orus Bank vise à répondre aux besoins des utilisateurs en matière de gestion financière quotidienne. Que vous souhaitiez effectuer des paiements, gérer vos comptes, ou bénéficier de services de carte prépayée, Orus Bank est là pour vous accompagner dans vos transactions financières.',
+            link: 'https://www.figma.com/proto/vP6YugrxvMn8uOyRkN1Eze/Banking_App?page-id=0%3A1&node-id=1-2&node-type=frame&viewport=310%2C321%2C0.34&t=6dN0q2ny69STaUnq-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2',
+            tag: 'design',
+        },
+        {
+            name: 'TimeScore',
+            desc: 'TimeScore a pour mission de rassembler toutes les informations essentielles concernant le football. Que vous soyez un fan inconditionnel, un joueur amateur ou simplement curieux des résultats, TimeScore vous offre tout ce dont vous avez besoin à portée de main.',
+            link: 'https://www.figma.com/proto/Rxq6Cq7jCvj6yXD3Fu51TC/Sport-App?page-id=0%3A1&node-id=133-480&node-type=canvas&viewport=178%2C361%2C0.23&t=IQfohO8DawCeI1tV-1&scaling=scale-down&content-scaling=fixed',
+            tag: 'design',
+        },
+        {
+            name: 'GameHub',
+            desc: 'Gameub a pour mission de rendre l\'acquisition de jeux PS4 accessible à tous, en centralisant un large éventail de titres et en simplifiant le processus d\'achat. Notre application vise à devenir votre référence pour trouver et acheter des jeux vidéo sur PS4.',
+            link: 'https://www.figma.com/proto/Kil4OErdcBFmsgWEvspslG/GameHub?page-id=0%3A1&node-id=1-2&node-type=canvas&viewport=164%2C314%2C0.11&t=3ZALLgelXHcs9eVl-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=24%3A1563',
+            tag: 'design',
+        },
     ];
 
     // Filtrer les projets en fonction de l'onglet actif
@@ -63,6 +81,12 @@ const Projects = () => {
                     onClick={() => setActiveTab("mobile")}
                 >
                     Mobile
+                </button>
+                <button
+                    className={`px-4 py-2 ${activeTab === "design" ? "text-foreground text-2xl font-semibold" : ""}`}
+                    onClick={() => setActiveTab("design")}
+                >
+                    UX/UI Design
                 </button>
             </div>
             <div className='flex flex-wrap gap-4 items-center justify-center mt-5'>

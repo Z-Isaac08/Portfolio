@@ -2,15 +2,14 @@ import React from 'react';
 import Logo from '../../assets/isaac.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
+import TypingAnimation from '../Typing/typing';
 
 const Hero = () => {
     return (
         <section className='flex flex-col md:flex-row m-auto p-4 w-11/12 md:w-4/5 items-start'>
             <div className='flex flex-col gap-4 w-full md:w-4/5'>
                 <h2 className='text-3xl md:text-5xl font-bold text-primary'>N'cho Sem Ezechiel Isaac</h2>
-                <h3 className='text-xl md:text-2xl text-foreground'>
-                    Développeur web/mobile full-stack
-                </h3>
+                <TypingAnimation />
                 <p className='text-base text-foreground font-normal md:w-4/6'>
                     Étudiant en 3e année à l'ESATIC, passionné par la création d’expériences web et mobiles intuitives. En tant que développeur full stack, je maîtrise le front-end et le back-end pour concevoir des solutions complètes et centrées sur l’utilisateur.
                     À la recherche d’un stage en développement mobile et web pour contribuer à une équipe innovante.

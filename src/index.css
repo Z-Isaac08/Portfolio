@@ -17,3 +17,20 @@ html {
   text-size-adjust: 100%;        
 }
 
+.blinking-cursor {
+  display: inline-block;
+  width: 5px;
+  height: 22px;
+  background-color: hsl(219 18% 71% / var(--tw-text-opacity)); /* Couleur du curseur */
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
