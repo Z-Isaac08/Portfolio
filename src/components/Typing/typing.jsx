@@ -1,12 +1,20 @@
 import React, { useEffect, useState } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // N'oublie pas d'importer les styles AOS
 
-const messages = ["Developpeur Web", "Developpeur Mobile", "UX/UI Designer"];
+const messages = ["Développeur Web", "Développeur Mobile", "UX/UI Designer"];
 
 const TypingAnimation = () => {
     const [displayedText, setDisplayedText] = useState("");
     const [currentMessageIndex, setCurrentMessageIndex] = useState(0);
 
     useEffect(() => {
+        // Initialiser AOS
+        AOS.init({
+            duration: 2000, // Durée de l'animation
+            once: true, // L'animation se déclenche une seule fois
+        });
+
         let currentText = "";
         let currentIndex = 0;
 
@@ -18,10 +26,10 @@ const TypingAnimation = () => {
                 setTimeout(typeMessage, 200); // Vitesse de saisie
             } else {
                 setTimeout(() => {
-                    setCurrentMessageIndex((prev) => (prev + 1) % messages.length); // Passer au prochain message
-                    setDisplayedText(""); // Réinitialiser le texte affiché
-                    currentIndex = 0; // Réinitialiser l'index de caractère
-                }, 3000); // Pause avant de passer au prochain message
+                    setCurrentMessageIndex((prev) => (prev + 1) % messages.length);
+                    setDisplayedText("");
+                    currentIndex = 0;
+                }, 3000); 
             }
         };
 
@@ -29,10 +37,13 @@ const TypingAnimation = () => {
     }, [currentMessageIndex]);
 
     return (
-            <h3 className="text-xl md:text-2xl text-foreground font-bold">
-                {displayedText}
-                <span className="blinking-cursor"></span>
-            </h3>
+        <h3 
+            data-aos="fade-up"
+            className="text-xl md:text-2xl text-foreground font-bold"
+        >
+            {displayedText}
+            <span className="blinking-cursor"></span>
+        </h3>
     );
 };
 

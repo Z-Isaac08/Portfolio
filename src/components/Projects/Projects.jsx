@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
-import Card from '../Card/Card';
+import React, { useEffect, useState } from 'react';
+import Card from '../Widget/Card';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Projects = () => {
     const [activeTab, setActiveTab] = useState("web");
@@ -55,7 +57,7 @@ const Projects = () => {
         },
         {
             name: 'GameHub',
-            desc: 'Gameub a pour mission de rendre l\'acquisition de jeux PS4 accessible à tous, en centralisant un large éventail de titres et en simplifiant le processus d\'achat. Notre application vise à devenir votre référence pour trouver et acheter des jeux vidéo sur PS4.',
+            desc: 'GameHub a pour mission de rendre l\'acquisition de jeux PS4 accessible à tous, en centralisant un large éventail de titres et en simplifiant le processus d\'achat. Notre application vise à devenir votre référence pour trouver et acheter des jeux vidéo sur PS4.',
             link: 'https://www.figma.com/proto/Kil4OErdcBFmsgWEvspslG/GameHub?page-id=0%3A1&node-id=1-2&node-type=canvas&viewport=164%2C314%2C0.11&t=3ZALLgelXHcs9eVl-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=24%3A1563',
             tag: 'design',
         },
@@ -66,10 +68,23 @@ const Projects = () => {
         (projet) => projet.tag === activeTab
     );
 
+    useEffect(() => {
+        // Initialiser AOS
+        AOS.init({
+            duration: 2000, // Durée de l'animation
+            once: true, // L'animation se déclenche une seule fois
+        });
+    }, []);
+
     return (
         <section className="m-auto p-4 w-11/12 md:w-4/5">
-            <h1 className='text-xl text-foreground font-medium mb-4 w-fit rounded-md border border-ring bg-darkerBackground p-2'>Projets</h1>
-            <div className='flex items-center justify-center space-x-5 flex-wrap'>
+            <h1 
+                data-aos="fade-up" // Ajouter une animation AOS
+                className='text-xl text-foreground font-medium mb-4 w-fit rounded-md border border-ring bg-darkerBackground p-2'
+            >
+                Projets
+            </h1>
+            <div data-aos='fade-down' className='flex items-center justify-center space-x-5 flex-wrap'>
                 <button
                     className={`px-4 py-2 ${activeTab === "web" ? "text-foreground text-2xl font-semibold" : ""}`}
                     onClick={() => setActiveTab("web")}
@@ -91,7 +106,10 @@ const Projects = () => {
             </div>
             <div className='flex flex-wrap gap-4 items-center justify-center mt-5'>
                 {filteredProjects.map((project, index) => (
-                    <Card key={index} projects={project} />
+                    <Card 
+                        key={index} 
+                        projects={project} 
+                    />
                 ))}
             </div>
         </section>
