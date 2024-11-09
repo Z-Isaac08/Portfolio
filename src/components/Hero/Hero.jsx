@@ -29,7 +29,7 @@ const Hero = () => {
                 <div className="w-fit h-auto border rounded-full p-2">
                     <img src={Logo} alt="Image d'Isaac" className="h-60 w-60 object-cover rounded-full" />
                 </div>
-                <a href="src/assets/ISAAC_N'CHO_CV.pdf" download="ISAAC_N'CHO_CV" className='flex items-center gap-2 bg-darkerBackground text-foreground rounded-sm p-3'>
+                <a href="/ISAAC_N'CHO_CV.pdf" download="ISAAC_N'CHO_CV" className='flex items-center gap-2 bg-darkerBackground text-foreground rounded-sm p-3'>
                     <FontAwesomeIcon icon={faDownload} className='bg-none' />
                     Mon CV
                 </a>
