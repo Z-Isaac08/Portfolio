@@ -20,12 +20,6 @@ const Projects = () => {
             tag: 'web',
         },
         {
-            name: 'Sushi App',
-            desc: 'Une application qui permet aux utilisateurs de commander facilement des sushis en ligne.',
-            link: '/',
-            tag: 'mobile',
-        },
-        {
             name: 'ACE FAMILY',
             desc: 'Une application dédiée à l\'enregistrement des participants lors des rencontres de la cellule de prière. Elle simplifie le processus d\'inscription, en permettant aux utilisateurs de s\'enregistrer rapidement.',
             link: 'https://github.com/Isaac1676/ACE_APP.git',

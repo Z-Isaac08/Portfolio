@@ -1,16 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // N'oublie pas d'importer les styles AOS
-import ReactJSLogo from '../../assets/react.svg';
-import MySQLLogo from '../../assets/mysql.svg';
-import TailwindCSSLogo from '../../assets/tailwind-css.svg';
-import PrismaLogo from '../../assets/prisma.svg';
-import NodeJSLogo from '../../assets/nodejs.svg';
-import FirebaseLogo from '../../assets/firebase.svg';
-import FlutterLogo from '../../assets/flutter.svg';
-import MongoLogo from '../../assets/mongodb.svg';
-import SQLogo from '../../assets/sqlite.svg';
-import FigmaLogo from '../../assets/figma.svg';
+import ReactJSLogo from '../../assets/images/react.svg';
+import MySQLLogo from '../../assets/images/mysql.svg';
+import TailwindCSSLogo from '../../assets/images/tailwind-css.svg';
+import PrismaLogo from '../../assets/images/prisma.svg';
+import NodeJSLogo from '../../assets/images/nodejs.svg';
+import FirebaseLogo from '../../assets/images/firebase.svg';
+import FlutterLogo from '../../assets/images/flutter.svg';
+import SQLogo from '../../assets/images/sqlite.svg';
+import FigmaLogo from '../../assets/images/figma.svg';
 
 const Skills = () => {
     const [activeTab, setActiveTab] = useState("web");
@@ -23,7 +22,6 @@ const Skills = () => {
         { logo: MySQLLogo, name: "MySQL", tag: "web" },
         { logo: FlutterLogo, name: "Flutter", tag: "mobile" },
         { logo: FirebaseLogo, name: "Firebase", tag: "mobile" },
-        { logo: MongoLogo, name: "MongoDB", tag: "web" },
         { logo: SQLogo, name: "SQLite", tag: "mobile" },
         { logo: FigmaLogo, name: "Figma", tag: "design" },
     ];

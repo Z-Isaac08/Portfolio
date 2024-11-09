@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import ContactWidget from '../Widget/ContactWidget';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faWhatsappSquare } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faSms } from '@fortawesome/free-solid-svg-icons';
 import AOS from 'aos'; // Import AOS
 import 'aos/dist/aos.css'; // Import les styles AOS
 
@@ -22,10 +22,10 @@ const Contact = () => {
             link: 'mailto:ezechielncho225@gmail.com',
         },
         {
-            logo: faPhone, 
-            title: 'Appelez-moi',
+            logo: faWhatsappSquare, 
+            title: 'Message me',
             info: '+225 0585456593',
-            link: 'tel:+2250585456593',
+            link: 'https://wa.me/2250585456593',
         },
         {
             logo: faLinkedin, 
