@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import Logo from '../../assets/images/isaac.png';
+import Logo from '../../assets/isaac.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import TypingAnimation from '../Typing/typing';

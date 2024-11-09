@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // N'oublie pas d'importer les styles AOS
-import ReactJSLogo from '../../assets/images/react.svg';
-import MySQLLogo from '../../assets/images/mysql.svg';
-import TailwindCSSLogo from '../../assets/images/tailwind-css.svg';
-import PrismaLogo from '../../assets/images/prisma.svg';
-import NodeJSLogo from '../../assets/images/nodejs.svg';
-import FirebaseLogo from '../../assets/images/firebase.svg';
-import FlutterLogo from '../../assets/images/flutter.svg';
-import SQLogo from '../../assets/images/sqlite.svg';
-import FigmaLogo from '../../assets/images/figma.svg';
+import ReactJSLogo from '../../assets/react.svg';
+import MySQLLogo from '../../assets/mysql.svg';
+import TailwindCSSLogo from '../../assets/tailwind-css.svg';
+import PrismaLogo from '../../assets/prisma.svg';
+import NodeJSLogo from '../../assets/nodejs.svg';
+import FirebaseLogo from '../../assets/firebase.svg';
+import FlutterLogo from '../../assets/flutter.svg';
+import SQLogo from '../../assets/sqlite.svg';
+import FigmaLogo from '../../assets/figma.svg';
 
 const Skills = () => {
     const [activeTab, setActiveTab] = useState("web");
