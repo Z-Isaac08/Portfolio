@@ -14,9 +14,9 @@ const Projects = () => {
             tag: 'web',
         },
         {
-            name: 'FileSA',
-            desc: 'Une application pratique qui permet aux utilisateurs de convertir facilement des fichiers d\'un format à un autre. Que ce soit pour des documents, des images ou des vidéos, ce convertisseur offre une interface conviviale, prenant en charge plusieurs formats, tout en garantissant la qualité et la rapidité des conversions.',
-            link: 'https://github.com/Isaac1676/MySaas.git',
+            name: 'BookApp',
+            desc: 'Une application pratique qui permet aux utilisateurs d\'accéder facilement à une large gamme de livres en ligne. Que ce soit pour des romans, des essais ou des livres techniques, cette bibliothèque en ligne offre une interface conviviale',
+            link: 'https://github.com/Z-Isaac08/BookApp.git',
             tag: 'web',
         },
         {

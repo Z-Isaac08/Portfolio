@@ -18,8 +18,8 @@ const Contact = () => {
         {
             logo: faEnvelope, 
             title: 'Email Me',
-            info: 'ezechielncho225@gmail.com',
-            link: 'mailto:ezechielncho225@gmail.com',
+            info: 'isaacncho08@gmail.com',
+            link: 'mailto:isaacncho08@gmail.com',
         },
         {
             logo: faWhatsappSquare, 
@@ -31,7 +31,7 @@ const Contact = () => {
             logo: faLinkedin, 
             title: 'Mon Profil LinkedIn',
             info: 'Découvrez mon parcours',
-            link: 'https://www.linkedin.com/in/isaac-n-cho-6a9a2a282/',
+            link: 'https://www.linkedin.com/in/isaac-n-cho/',
         },
     ];
 
