@@ -12,7 +12,7 @@ const Card = ({ projects }) => {
     }, []);
 
     return (
-        <div className='max-w-xs sm:max-w-sm md:max-w-md p-5 text-primary flex flex-col gap-2 border border-transparent rounded-lg transition-all duration-300 hover:border-ring hover:-translate-y-2'>
+        <div className='max-w-xs sm:max-w-sm md:max-w-md p-5 text-primary flex flex-col gap-2 border border-transparent rounded-lg hover:border-foreground hover:shadow-[0_2px_10px_rgba(255,255,255,0.2)] transition-all duration-300 hover:-translate-y-2'>
             <h2 data-aos='fade-right' className='text-xl md:text-2xl font-bold'>{projects.name}</h2>
             <p data-aos='fade-right' className='text-sm md:text-base'>{projects.desc}</p>
             <a data-aos='fade-right' className='text-blue-500 underline hover:text-blue-700' target='_blank' rel="noopener noreferrer" href={projects.link}>Voir le projet</a>

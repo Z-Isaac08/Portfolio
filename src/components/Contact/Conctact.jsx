@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react';
 import ContactWidget from '../Widget/ContactWidget';
-import { faLinkedin, faWhatsappSquare } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { faPhone, faSms } from '@fortawesome/free-solid-svg-icons';
+import { FaEnvelope, FaLinkedinIn, FaWhatsappSquare } from "react-icons/fa";
 import AOS from 'aos'; // Import AOS
 import 'aos/dist/aos.css'; // Import les styles AOS
 
@@ -16,19 +14,19 @@ const Contact = () => {
 
     const contacts = [
         {
-            logo: faEnvelope, 
+            logo: FaEnvelope, 
             title: 'Email Me',
             info: 'isaacncho08@gmail.com',
             link: 'mailto:isaacncho08@gmail.com',
         },
         {
-            logo: faWhatsappSquare, 
+            logo: FaWhatsappSquare, 
             title: 'Message me',
             info: '+225 0585456593',
             link: 'https://wa.me/2250585456593',
         },
         {
-            logo: faLinkedin, 
+            logo: FaLinkedinIn, 
             title: 'Mon Profil LinkedIn',
             info: 'Découvrez mon parcours',
             link: 'https://www.linkedin.com/in/isaac-n-cho/',

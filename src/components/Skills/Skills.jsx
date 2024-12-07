@@ -1,29 +1,25 @@
 import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // N'oublie pas d'importer les styles AOS
-import ReactJSLogo from '../../assets/react.svg';
-import MySQLLogo from '../../assets/mysql.svg';
-import TailwindCSSLogo from '../../assets/tailwind-css.svg';
-import PrismaLogo from '../../assets/prisma.svg';
-import NodeJSLogo from '../../assets/nodejs.svg';
-import FirebaseLogo from '../../assets/firebase.svg';
-import FlutterLogo from '../../assets/flutter.svg';
-import SQLogo from '../../assets/sqlite.svg';
-import FigmaLogo from '../../assets/figma.svg';
+import { FaReact, FaNodeJs, FaFigma } from "react-icons/fa"
+import { IoLogoFirebase } from "react-icons/io5";
+import { SiMysql, SiSqlite, SiPrisma, SiTailwindcss, SiFlutter, SiFastapi } from "react-icons/si";
+import CardSkill from '../Widget/CardSkill';
 
 const Skills = () => {
     const [activeTab, setActiveTab] = useState("web");
 
     const technologies = [
-        { logo: ReactJSLogo, name: "ReactJS", tag: "web" },
-        { logo: TailwindCSSLogo, name: "Tailwind CSS", tag: "web" },
-        { logo: NodeJSLogo, name: "NodeJS(ExpressJS)", tag: "web" },
-        { logo: PrismaLogo, name: "Prisma", tag: "web" },
-        { logo: MySQLLogo, name: "MySQL", tag: "web" },
-        { logo: FlutterLogo, name: "Flutter", tag: "mobile" },
-        { logo: FirebaseLogo, name: "Firebase", tag: "mobile" },
-        { logo: SQLogo, name: "SQLite", tag: "mobile" },
-        { logo: FigmaLogo, name: "Figma", tag: "design" },
+        { logo: FaReact, name: "ReactJS", tag: "web" },
+        { logo: SiTailwindcss, name: "Tailwind CSS", tag: "web" },
+        { logo: FaNodeJs, name: "NodeJS(ExpressJS)", tag: "web" },
+        { logo: SiPrisma, name: "Prisma", tag: "web" },
+        { logo: SiFastapi, name: "FastAPI", tag: "web" },
+        { logo: SiMysql, name: "MySQL", tag: "web" },
+        { logo: SiFlutter, name: "Flutter", tag: "mobile" },
+        { logo: IoLogoFirebase, name: "Firebase", tag: "mobile" },
+        { logo: SiSqlite, name: "SQLite", tag: "mobile" },
+        { logo: FaFigma, name: "Figma", tag: "design" },
     ];
 
     // Filtrer les technologies en fonction de l'onglet actif
@@ -49,19 +45,19 @@ const Skills = () => {
             </h1>
             <div data-aos="fade-down" className='flex items-center justify-center space-x-5 flex-wrap'>
                 <button
-                    className={`px-4 py-2 ${activeTab === "web" ? "text-foreground text-2xl font-semibold" : ""}`}
+                    className={`px-4 py-2 ${activeTab === "web" ? "text-foreground text-xl font-semibold" : ""}`}
                     onClick={() => setActiveTab("web")}
                 >
                     Web
                 </button>
                 <button
-                    className={`px-4 py-2 ${activeTab === "mobile" ? "text-foreground text-2xl font-semibold" : ""}`}
+                    className={`px-4 py-2 ${activeTab === "mobile" ? "text-foreground text-xl font-semibold" : ""}`}
                     onClick={() => setActiveTab("mobile")}
                 >
                     Mobile
                 </button>
                 <button
-                    className={`px-4 py-2 ${activeTab === "design" ? "text-foreground text-2xl font-semibold" : ""}`}
+                    className={`px-4 py-2 ${activeTab === "design" ? "text-foreground text-xl font-semibold" : ""}`}
                     onClick={() => setActiveTab("design")}
                 >
                     UX/UI Design
@@ -69,14 +65,7 @@ const Skills = () => {
             </div>
             <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
                 {filteredTechnologies.map((tech) => (
-                    <div 
-                        key={tech.name} 
-                        className="flex text-xl text-foreground items-center space-x-4" 
-                        data-aos="fade-up" // Ajouter une animation AOS pour chaque technologie
-                    >
-                        <img src={tech.logo} alt={tech.name} className="h-9 w-9" />
-                        <span>{tech.name}</span>
-                    </div>
+                    <CardSkill key={tech.name} name={tech.name} logo={tech.logo}/>
                 ))}
             </div>
         </section>

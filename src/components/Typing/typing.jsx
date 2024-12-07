@@ -29,7 +29,7 @@ const TypingAnimation = () => {
                     setCurrentMessageIndex((prev) => (prev + 1) % messages.length);
                     setDisplayedText("");
                     currentIndex = 0;
-                }, 3000); 
+                }, 2000); 
             }
         };
 
@@ -42,7 +42,6 @@ const TypingAnimation = () => {
             className="text-xl md:text-2xl text-foreground font-bold"
         >
             {displayedText}
-            <span className="blinking-cursor"></span>
         </h3>
     );
 };

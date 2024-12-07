@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { FaLinkedinIn, FaGithub } from "react-icons/fa"
 import { Link } from 'react-router-dom';
 
 const Header = () => {
@@ -19,10 +18,10 @@ const Header = () => {
             <h1 data-aos="fade-down" className='text-2xl md:text-3xl font-bold text-foreground'>Isaac N'cho</h1>
             <div data-aos="fade-down" className='flex items-center space-x-4'>
                 <Link to='https://github.com/Z-Isaac08' target='_blank' rel='noopener noreferrer'>
-                    <FontAwesomeIcon icon={faGithub} className='text-foreground h-6 w-6 md:h-8 md:w-8' />
+                    <FaGithub className='text-foreground h-6 w-6 md:h-8 md:w-8' />
                 </Link>
                 <Link to='https://www.linkedin.com/in/isaac-n-cho/' target='_blank' rel='noopener noreferrer'>
-                    <FontAwesomeIcon icon={faLinkedin} className='text-foreground h-6 w-6 md:h-8 md:w-8' />
+                    <FaLinkedinIn className='text-foreground h-6 w-6 md:h-8 md:w-8' />
                 </Link>
             </div>
         </header>

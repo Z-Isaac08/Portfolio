@@ -14,6 +14,12 @@ const Projects = () => {
             tag: 'web',
         },
         {
+            name: 'PostApp',
+            desc: 'Une petite application afin de pouvoir tester mon CRUD(backend) entièrement conçue avec FastAPI où on peut ajouter des posts et les mettre à jour et les supprimer.',
+            link: 'https://github.com/Z-Isaac08/BlogApp.git',
+            tag: 'web',
+        },
+        {
             name: 'BookApp',
             desc: 'Une application pratique qui permet aux utilisateurs d\'accéder facilement à une large gamme de livres en ligne. Que ce soit pour des romans, des essais ou des livres techniques, cette bibliothèque en ligne offre une interface conviviale',
             link: 'https://github.com/Z-Isaac08/BookApp.git',
@@ -80,19 +86,19 @@ const Projects = () => {
             </h1>
             <div data-aos='fade-down' className='flex items-center justify-center space-x-5 flex-wrap'>
                 <button
-                    className={`px-4 py-2 ${activeTab === "web" ? "text-foreground text-2xl font-semibold" : ""}`}
+                    className={`px-4 py-2 ${activeTab === "web" ? "text-foreground text-xl font-semibold" : ""}`}
                     onClick={() => setActiveTab("web")}
                 >
                     Web
                 </button>
                 <button
-                    className={`px-4 py-2 ${activeTab === "mobile" ? "text-foreground text-2xl font-semibold" : ""}`}
+                    className={`px-4 py-2 ${activeTab === "mobile" ? "text-foreground text-xl font-semibold" : ""}`}
                     onClick={() => setActiveTab("mobile")}
                 >
                     Mobile
                 </button>
                 <button
-                    className={`px-4 py-2 ${activeTab === "design" ? "text-foreground text-2xl font-semibold" : ""}`}
+                    className={`px-4 py-2 ${activeTab === "design" ? "text-foreground text-xl font-semibold" : ""}`}
                     onClick={() => setActiveTab("design")}
                 >
                     UX/UI Design

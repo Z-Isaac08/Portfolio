@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import Logo from '../../assets/isaac.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDownload } from '@fortawesome/free-solid-svg-icons';
+import { FaDownload } from "react-icons/fa";
 import TypingAnimation from '../Typing/typing';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -30,7 +29,7 @@ const Hero = () => {
                     <img src={Logo} alt="Image d'Isaac" className="h-60 w-60 object-cover rounded-full" />
                 </div>
                 <a href="/ISAAC_N'CHO_CV.pdf" download="ISAAC_N'CHO_CV" className='flex items-center gap-2 bg-darkerBackground text-foreground rounded-sm p-3'>
-                    <FontAwesomeIcon icon={faDownload} className='bg-none' />
+                    <FaDownload />
                     Mon CV
                 </a>
             </div>
