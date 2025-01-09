@@ -26,6 +26,12 @@ const Projects = () => {
             tag: 'web',
         },
         {
+            name: 'ProjetPython',
+            desc: 'Petit gestionnaire de bibliothèque(MVP) confiée en cours de Python',
+            link: 'https://github.com/Z-Isaac08/ProjetPython',
+            tag: 'web',
+        },
+        {
             name: 'ACE FAMILY',
             desc: 'Une application dédiée à l\'enregistrement des participants lors des rencontres de la cellule de prière. Elle simplifie le processus d\'inscription, en permettant aux utilisateurs de s\'enregistrer rapidement.',
             link: 'https://github.com/Isaac1676/ACE_APP.git',
