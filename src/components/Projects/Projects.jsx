@@ -27,7 +27,7 @@ const Projects = () => {
         },
         {
             name: 'ProjetPython',
-            desc: 'Petit gestionnaire de bibliothèque(MVP) confiée en cours de Python',
+            desc: 'Petit gestionnaire de bibliothèque(MVP) confié en cours de Python',
             link: 'https://github.com/Z-Isaac08/ProjetPython',
             tag: 'web',
         },
