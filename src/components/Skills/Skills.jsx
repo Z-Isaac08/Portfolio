@@ -3,7 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // N'oublie pas d'importer les styles AOS
 import { FaReact, FaNodeJs, FaFigma } from "react-icons/fa"
 import { IoLogoFirebase } from "react-icons/io5";
-import { SiMysql, SiSqlite, SiPrisma, SiTailwindcss, SiFlutter, SiFastapi } from "react-icons/si";
+import { SiMysql, SiSqlite, SiPrisma, SiTailwindcss, SiFlutter, SiFastapi, SiTypescript } from "react-icons/si";
 import CardSkill from '../Widget/CardSkill';
 
 const Skills = () => {
@@ -11,6 +11,7 @@ const Skills = () => {
 
     const technologies = [
         { logo: FaReact, name: "ReactJS", tag: "web" },
+        { logo: SiTypescript, name: "TypeScript", tag: "web" },
         { logo: SiTailwindcss, name: "Tailwind CSS", tag: "web" },
         { logo: FaNodeJs, name: "NodeJS(ExpressJS)", tag: "web" },
         { logo: SiPrisma, name: "Prisma", tag: "web" },

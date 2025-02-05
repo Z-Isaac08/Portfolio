@@ -44,6 +44,18 @@ const Projects = () => {
             tag: 'mobile',
         },
         {
+            name: 'XpenseMobile',
+            desc: 'Xpense mais un remaster pour mobile avec cette fois l\'ajout de revenus pour une gestion encore meilleure.',
+            link: 'https://github.com/Z-Isaac08/X_Pense_Mobile.git',
+            tag: 'mobile',
+        },
+        {
+            name: 'TwitterClone',
+            desc: 'Un clone de Twitter où vous pouvez tweeter, liker, retweeter et suivre vos amis ! Une plateforme simple et rapide pour partager vos pensées, vos idées et vous connecter avec le monde. #socialmedia #flutter #firebase',
+            link: 'https://github.com/Z-Isaac08/TwitterClone.git',
+            tag: 'mobile',
+        },
+        {
             name: 'MacFinder',
             desc: 'Un outil rapide et simple qui permet aux utilisateurs de découvrir le fabricant d\'une adresse MAC. Grâce à cette application, il est facile d\'identifier et de vérifier l\'origine des appareils connectés à un réseau.',
             link: 'https://macfinder.onrender.com/',
